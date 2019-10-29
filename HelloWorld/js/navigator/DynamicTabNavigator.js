@@ -90,14 +90,14 @@ class TabBarComponent extends React.Component {
 		super(props)
 		this.theme = {
 			tintColor: props.activeTintColor,
-			updataTime: new Date().getTime()
+			updateTime: new Date().getTime()
 		}
 	}
 	render(){
 		const {routes, index} = this.props.navigation.state
 		if(routes[index].params){
 			const {theme} = routes[index].params
-			if(theme && theme.updataTime > this.theme.updataTime){
+			if(theme && theme.updateTime > this.theme.updateTime){
 				this.theme = theme
 			}
 		}

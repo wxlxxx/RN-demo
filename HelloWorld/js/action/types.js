@@ -1,0 +1,4 @@
+export default {
+	THEME_CHAMGE: 'THEME_CHAMGE',
+	THEME_INIT: 'THEME_INIT'
+}

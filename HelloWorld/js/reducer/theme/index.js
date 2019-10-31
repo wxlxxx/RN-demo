@@ -1,7 +1,7 @@
 import Types from '../../action/types'
 
 const defaultState = {
-	theme: 'blue'
+	theme: 'red'
 }
 
 export default function onAction(state=defaultState, action){
@@ -11,9 +11,7 @@ export default function onAction(state=defaultState, action){
 				...state,
 				theme: action.theme
 			}
-			break;
 		default:
 			return state
-			break;
 	}
 }

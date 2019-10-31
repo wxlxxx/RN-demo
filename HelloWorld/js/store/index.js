@@ -1,9 +1,9 @@
 import {applyMiddleware, createStore} from 'redux'
-import thunk from 'redux-thunk'
-import reducers from '../reducer'
+import reduxThunk from 'redux-thunk'
+import reducers from '../reducer' //使store.dispatch()可以接受函数
 
 const middlewares = [
-	thunk
+	reduxThunk
 ]
 
 // 2.创建store

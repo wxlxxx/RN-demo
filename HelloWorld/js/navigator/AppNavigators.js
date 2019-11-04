@@ -23,11 +23,14 @@ const MainNavigator = createStackNavigator({
 	DetailPage: DetailPage
 })
 
-export default createAppContainer(createSwitchNavigator({
-	Init: InitNavigator,
-	Main: MainNavigator
-}, {
-	navigationOptions: {
-		header: null
+export default createAppContainer(createSwitchNavigator(
+	{
+		Init: InitNavigator,
+		Main: MainNavigator
+	}, 
+	{
+		navigationOptions: {
+			header: null
+		}
 	}
-}))
+))

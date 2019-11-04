@@ -108,4 +108,4 @@ const mapStateToPropos = (state) => ({
 	theme: state.theme.theme
 })
 
-export default connect(mapStateToPropos)(DynamicTabNavigator)
+export default connect(mapStateToPropos, null)(DynamicTabNavigator)

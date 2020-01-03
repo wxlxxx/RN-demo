@@ -1,6 +1,7 @@
 import {applyMiddleware, createStore} from 'redux'
-import reduxThunk from 'redux-thunk'
-import reducers from '../reducer' //使store.dispatch()可以接受函数
+import reduxThunk from 'redux-thunk' //使store.dispatch()可以接受函数
+import reducers from '../reducer'
+
 
 const logger = store => next => action => {
 	if(typeof action === 'function'){
